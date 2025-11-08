@@ -14,7 +14,6 @@ export default function HeroSection() {
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* 動画背景（PC・タブレット） */}
       <div className="hidden md:block absolute inset-0 w-full h-full">
         <video
           className="absolute inset-0 w-full h-full object-cover"
@@ -27,7 +26,6 @@ export default function HeroSection() {
         </video>
       </div>
 
-      {/* 静止画背景（モバイル） */}
       <div className="md:hidden absolute inset-0 w-full h-full">
         <img
           src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80"
@@ -36,10 +34,8 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* オーバーレイ */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
 
-      {/* ミュートボタン（PC・タブレットのみ） */}
       <button
         onClick={toggleMute}
         className="hidden md:block absolute top-8 right-8 z-20 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300"
@@ -48,7 +44,6 @@ export default function HeroSection() {
         {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
       </button>
 
-      {/* コンテンツ */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
           <span className="block text-amber-200">心を込めた、</span>
@@ -60,13 +55,13 @@ export default function HeroSection() {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          
+          <a
             href="#menu"
             className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
           >
             メニューを見る
           </a>
-          
+          <a
             href="#store-info"
             className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border-2 border-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105"
           >
@@ -75,7 +70,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* スクロールインジケーター */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white rounded-full mt-2"></div>
