@@ -37,6 +37,10 @@
     "typescript-eslint": "^8.35.1",
     "vite": "^7.0.3",
     "unplugin-auto-import": "^19.3.0",
-     "source-map": "^0.7.6"
+    "source-map": "^0.7.6"
+  },
+  "overrides": {
+    "glob": "^11.0.4",
+    "js-yaml": "^4.1.1"
   }
 }
