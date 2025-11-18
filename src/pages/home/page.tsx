@@ -5,10 +5,7 @@ import AboutJajamen from './components/AboutJajamen';
 import HowToEat from './components/HowToEat';
 import Menu from './components/Menu';
 import InstagramSpecial from './components/InstagramSpecial';
-import WhyAddictive from './components/WhyAddictive';
-import History from './components/History';
 import StoreInfo from './components/StoreInfo';
-import InstagramFeed from './components/InstagramFeed';
 import Footer from './components/Footer';
 
 export default function Home() {
@@ -25,10 +22,7 @@ export default function Home() {
       <HowToEat />
       <Menu />
       <InstagramSpecial />
-      <WhyAddictive />
-      <History />
       <StoreInfo />
-      <InstagramFeed />
       <Footer />
     </div>
   );

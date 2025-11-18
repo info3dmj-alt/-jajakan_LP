@@ -1,7 +1,7 @@
 
 export default function Footer() {
   return (
-    <footer className="bg-amber-900 text-white py-12">
+    <footer className="text-white py-12" style={{ backgroundColor: 'rgb(69, 67, 63)', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Logo and Description */}

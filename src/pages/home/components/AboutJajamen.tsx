@@ -1,72 +1,84 @@
 
 export default function AboutJajamen() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-20 bg-gradient-to-b from-orange-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-4">
-            盛岡名物『じゃじゃ麺』の特徴
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
+            盛岡名物『じゃじゃ麺』について
           </h2>
-          <div className="w-24 h-1 bg-red-600 mx-auto"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <p className="text-lg text-gray-700 leading-relaxed">
-              もちもち食感の平打ち麺に<span className="font-bold text-amber-900">"じゃじゃ味噌"</span>と薬味（きゅうり・ネギ）を乗せ、自分好みの調味料で仕上げる<span className="font-bold text-red-600">"育てる麺"</span>。
-            </p>
-            
-            <p className="text-lg text-gray-700 leading-relaxed">
-              味噌をベースに、ひき肉・胡麻・椎茸など十数種類の材料を炒めて寝かせた<span className="font-bold text-amber-900">秘伝の味噌</span>が特徴です。
-            </p>
-
-            <div className="bg-amber-50 rounded-lg p-6 border-l-4 border-amber-600">
-              <h3 className="font-bold text-amber-900 mb-3 text-lg">
-                <i className="ri-lightbulb-line mr-2"></i>
-                美味しく食べるコツ
-              </h3>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-red-600 mr-2">1.</span>
-                  <span>まずは素の味を確かめる</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-600 mr-2">2.</span>
-                  <span>少量ずつ調味料を足す</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-red-600 mr-2">3.</span>
-                  <span>色が変わるまでしっかり混ぜる</span>
-                </li>
-              </ul>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* 特徴セクション */}
+          <div>
+            <h3 className="text-2xl font-bold mb-6" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
+              盛岡名物『じゃじゃ麺』の特徴
+            </h3>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mt-1">
+                  <i className="ri-check-line text-red-600 text-sm"></i>
+                </div>
+                <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
+                  平たい「うどん」のような麺に特製の肉味噌をのせた料理
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mt-1">
+                  <i className="ri-check-line text-red-600 text-sm"></i>
+                </div>
+                <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
+                  きゅうりやネギなどの薬味と一緒に混ぜて食べる
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mt-1">
+                  <i className="ri-check-line text-red-600 text-sm"></i>
+                </div>
+                <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
+                  食べ終わった後は「ちーたんたん」という卵スープで締める
+                </p>
+              </div>
             </div>
-
-            <p className="text-lg text-gray-700 leading-relaxed">
-              最後は生卵と茹で汁で作る<span className="font-bold text-red-600">『ちーたんたん』</span>で、ふわっと優しい余韻を。
-            </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          {/* 画像 */}
+          <div className="relative">
             <img
-              src="https://readdy.ai/api/search-image?query=Close%20up%20of%20Japanese%20jajamen%20miso%20sauce%20being%20prepared%20in%20traditional%20wok%2C%20cooking%20process%2C%20steam%20rising%2C%20professional%20kitchen%20atmosphere&width=400&height=300&seq=cooking1&orientation=landscape"
-              alt="じゃじゃ味噌の調理"
-              className="rounded-lg shadow-lg w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+              src="https://readdy.ai/api/search-image?query=Traditional%20Japanese%20jajamen%20noodles%20with%20flat%20wheat%20noodles%2C%20miso%20meat%20sauce%2C%20fresh%20cucumber%20slices%2C%20green%20onions%2C%20and%20chopsticks%20on%20wooden%20table%2C%20authentic%20Japanese%20restaurant%20setting%2C%20warm%20lighting%2C%20appetizing%20food%20photography&width=600&height=400&seq=jajamen-features&orientation=landscape"
+              alt="盛岡じゃじゃ麺の特徴"
+              className="w-full h-80 object-cover object-top rounded-xl shadow-lg"
             />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* 画像 */}
+          <div className="relative lg:order-1">
             <img
-              src="https://readdy.ai/api/search-image?query=Fresh%20flat%20wheat%20noodles%20being%20boiled%20in%20large%20pot%2C%20Japanese%20restaurant%20kitchen%2C%20steamy%20atmosphere%2C%20authentic%20noodle%20making&width=400&height=300&seq=cooking2&orientation=landscape"
-              alt="麺の茹で上げ"
-              className="rounded-lg shadow-lg w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+              src="https://readdy.ai/api/search-image?query=Historical%20Japanese%20restaurant%20interior%20from%201950s%20era%2C%20traditional%20wooden%20tables%20and%20chairs%2C%20vintage%20atmosphere%2C%20old%20Japanese%20noodle%20shop%20setting%2C%20nostalgic%20ambiance%2C%20warm%20lighting%2C%20historical%20food%20establishment&width=600&height=400&seq=jajamen-history&orientation=landscape"
+              alt="盛岡じゃじゃ麺の発祥"
+              className="w-full h-80 object-cover object-top rounded-xl shadow-lg"
             />
-            <img
-              src="https://readdy.ai/api/search-image?query=Plating%20jajamen%20noodles%20with%20miso%20sauce%20and%20fresh%20toppings%2C%20chef%20hands%20arranging%20cucumber%20and%20green%20onions%2C%20professional%20presentation&width=400&height=300&seq=cooking3&orientation=landscape"
-              alt="盛り付けの様子"
-              className="rounded-lg shadow-lg w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-            />
-            <img
-              src="https://readdy.ai/api/search-image?query=Finished%20jajamen%20bowl%20with%20colorful%20toppings%20ready%20to%20serve%2C%20traditional%20Japanese%20ceramic%20bowl%2C%20appetizing%20presentation%2C%20warm%20restaurant%20lighting&width=400&height=300&seq=cooking4&orientation=landscape"
-              alt="完成したじゃじゃ麺"
-              className="rounded-lg shadow-lg w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-            />
+          </div>
+
+          {/* 発祥セクション */}
+          <div className="lg:order-2">
+            <h3 className="text-2xl font-bold mb-6" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
+              盛岡じゃじゃ麺の発祥
+            </h3>
+            <div className="space-y-4">
+              <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
+                昭和29年（1954年）、盛岡市内丸の「白龍」で生まれました。
+              </p>
+              <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
+                中国出身の初代店主が、故郷の「炸醤麺（ジャージャー麺）」を日本人の口に合うようにアレンジして誕生したのが盛岡じゃじゃ麺です。
+              </p>
+              <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
+                今では盛岡の名物として全国に知られ、多くの人に愛され続けています。
+              </p>
+            </div>
           </div>
         </div>
       </div>
