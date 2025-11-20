@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
 export default function HeroSection() {
-  const [videoLoaded, setVideoLoaded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const basePath = import.meta.env.BASE_URL;
@@ -18,41 +17,53 @@ export default function HeroSection() {
   }, []);
 
   useEffect(() => {
-    if (videoRef.current) {
-      // 動画の読み込みと再生を強制
-      videoRef.current.load();
-      
-      const attemptPlay = async () => {
-        try {
-          // mutedを確実に設定
-          if (videoRef.current) {
-            videoRef.current.muted = true;
-            videoRef.current.playsInline = true;
-            await videoRef.current.play();
-            console.log('Video autoplay succeeded');
-          }
-        } catch (error) {
-          console.log('Video autoplay failed, will retry on user interaction:', error);
-          
-          // 自動再生失敗時、ユーザーのインタラクションで再生
-          const playOnInteraction = () => {
-            if (videoRef.current) {
-              videoRef.current.play().catch(console.error);
-            }
-            document.removeEventListener('click', playOnInteraction);
-            document.removeEventListener('touchstart', playOnInteraction);
-          };
-          
-          document.addEventListener('click', playOnInteraction);
-          document.addEventListener('touchstart', playOnInteraction);
-        }
-      };
+    const video = videoRef.current;
+    if (!video) return;
 
-      if (videoLoaded) {
-        attemptPlay();
+    // 動画ソースを設定
+    const videoSrc = isMobile 
+      ? `${basePath}videos/jajakan-hero-mobile.mp4` 
+      : `${basePath}videos/jajakan-hero-desktop.mp4`;
+    
+    video.src = videoSrc;
+    video.muted = true;
+    video.playsInline = true;
+    video.loop = true;
+
+    // 動画を読み込んで再生を試みる
+    const handleLoadedData = async () => {
+      try {
+        await video.play();
+        console.log('✅ Video autoplay succeeded');
+      } catch (error) {
+        console.warn('⚠️ Video autoplay blocked, waiting for user interaction:', error);
+        
+        // 自動再生が失敗した場合、ユーザーインタラクションで再生
+        const playOnInteraction = async () => {
+          try {
+            await video.play();
+            console.log('✅ Video started after user interaction');
+          } catch (err) {
+            console.error('❌ Failed to play video:', err);
+          }
+          document.removeEventListener('click', playOnInteraction);
+          document.removeEventListener('touchstart', playOnInteraction);
+          document.removeEventListener('scroll', playOnInteraction);
+        };
+        
+        document.addEventListener('click', playOnInteraction, { once: true });
+        document.addEventListener('touchstart', playOnInteraction, { once: true });
+        document.addEventListener('scroll', playOnInteraction, { once: true });
       }
-    }
-  }, [videoLoaded, isMobile]);
+    };
+
+    video.addEventListener('loadeddata', handleLoadedData);
+    video.load(); // 明示的に読み込みを開始
+
+    return () => {
+      video.removeEventListener('loadeddata', handleLoadedData);
+    };
+  }, [isMobile, basePath]);
 
   return (
     <section className="relative min-h-screen overflow-hidden" aria-label="ヒーローセクション">
@@ -61,17 +72,9 @@ export default function HeroSection() {
         <video
           ref={videoRef}
           className="w-full h-full object-cover"
-          muted
-          loop
-          playsInline
           preload="auto"
-          onLoadedData={() => setVideoLoaded(true)}
-        >
-          <source 
-            src={isMobile ? `${basePath}videos/jajakan-hero-mobile.mp4` : `${basePath}videos/jajakan-hero-desktop.mp4`} 
-            type="video/mp4" 
-          />
-        </video>
+          aria-label="じゃじゃかんのヒーロー動画"
+        />
       </div>
 
       {/* 和風額縁効果（二重枠） */}
@@ -98,7 +101,7 @@ export default function HeroSection() {
       {/* スクロールボタン */}
       <button
         onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
-        className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-white p-2 z-20"
+        className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-white p-2 z-20 hover:scale-110 transition-transform"
         aria-label="下にスクロール"
         type="button"
       >
