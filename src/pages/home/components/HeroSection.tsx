@@ -25,7 +25,8 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen overflow-hidden" aria-label="ヒーローセクション">
-      <div className="absolute inset-0">
+      {/* 動画背景 */}
+      <div className="absolute inset-0 z-0">
         <video
           ref={videoRef}
           className="w-full h-full object-cover"
@@ -33,7 +34,7 @@ export default function HeroSection() {
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
           onLoadedData={() => setVideoLoaded(true)}
         >
           <source 
@@ -43,9 +44,31 @@ export default function HeroSection() {
         </video>
       </div>
 
+      {/* 和風額縁効果（二重枠） */}
+      <div className="absolute inset-0 z-10 pointer-events-none">
+        {/* 外枠（ダークグレー） */}
+        <div 
+          className="absolute inset-0 border-[20px] sm:border-[28px] md:border-[40px] lg:border-[52px]"
+          style={{ borderColor: '#44413C' }}
+        />
+        {/* 中間層（クリーム） */}
+        <div 
+          className="absolute inset-[20px] sm:inset-[28px] md:inset-[40px] lg:inset-[52px] border-[6px] sm:border-[8px] md:border-[10px] lg:border-[12px]"
+          style={{ borderColor: '#FBF7EF' }}
+        />
+        {/* 内枠（ネイビーアクセント） */}
+        <div 
+          className="absolute inset-[26px] sm:inset-[36px] md:inset-[50px] lg:inset-[64px] border-[2px] sm:border-[3px] md:border-[4px]"
+          style={{ borderColor: '#3C4A6C' }}
+        />
+        {/* 外側の影効果 */}
+        <div className="absolute inset-0 shadow-2xl pointer-events-none" />
+      </div>
+
+      {/* スクロールボタン */}
       <button
         onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
-        className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-white p-2"
+        className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-white p-2 z-20"
         aria-label="下にスクロール"
         type="button"
       >

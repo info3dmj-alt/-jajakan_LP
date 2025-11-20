@@ -37,8 +37,17 @@ export default function HowToEat() {
                 alt="調味料でカスタマイズ"
                 className="w-full h-48 object-cover object-top rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
               />
-              <div className="absolute -top-4 -left-4 w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                02
+              <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg overflow-hidden">
+                {/* 背景GIF */}
+                <img 
+                  src={`${import.meta.env.BASE_URL || '/'}images/ohdo.gif`}
+                  alt=""
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                {/* 半透明オーバーレイ */}
+                <div className="absolute inset-0 bg-red-600 opacity-60"></div>
+                {/* ステップ番号 */}
+                <span className="relative z-10 text-white">02</span>
               </div>
             </div>
             <h3 className="text-xl font-bold mb-3" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
