@@ -38,9 +38,9 @@ export default function HeroSection() {
           onLoadedData={() => setVideoLoaded(true)}
         >
           <source 
-            src={isMobile ? `${basePath}videos/jajakan-hero-mobile.mp4` : `${basePath}videos/jajakan-hero-desktop.mp4`} 
-            type="video/mp4" 
-          />
+  src={isMobile ? `${basePath}videos/jajakan-hero-mobile.mp4` : `${basePath}videos/jajakan-hero-desktop.mp4`} 
+  type="video/mp4" 
+/>
         </video>
       </div>
 
