@@ -1,3 +1,5 @@
+import { useState, useEffect, useRef } from 'react';
+
 export default function HeroSection() {
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -16,12 +18,41 @@ export default function HeroSection() {
   }, []);
 
   useEffect(() => {
-    if (videoRef.current && videoLoaded) {
-      videoRef.current.play().catch(error => {
-        console.log('Video autoplay failed:', error);
-      });
+    if (videoRef.current) {
+      // 動画の読み込みと再生を強制
+      videoRef.current.load();
+      
+      const attemptPlay = async () => {
+        try {
+          // mutedを確実に設定
+          if (videoRef.current) {
+            videoRef.current.muted = true;
+            videoRef.current.playsInline = true;
+            await videoRef.current.play();
+            console.log('Video autoplay succeeded');
+          }
+        } catch (error) {
+          console.log('Video autoplay failed, will retry on user interaction:', error);
+          
+          // 自動再生失敗時、ユーザーのインタラクションで再生
+          const playOnInteraction = () => {
+            if (videoRef.current) {
+              videoRef.current.play().catch(console.error);
+            }
+            document.removeEventListener('click', playOnInteraction);
+            document.removeEventListener('touchstart', playOnInteraction);
+          };
+          
+          document.addEventListener('click', playOnInteraction);
+          document.addEventListener('touchstart', playOnInteraction);
+        }
+      };
+
+      if (videoLoaded) {
+        attemptPlay();
+      }
     }
-  }, [videoLoaded]);
+  }, [videoLoaded, isMobile]);
 
   return (
     <section className="relative min-h-screen overflow-hidden" aria-label="ヒーローセクション">
@@ -30,7 +61,6 @@ export default function HeroSection() {
         <video
           ref={videoRef}
           className="w-full h-full object-cover"
-          autoPlay
           muted
           loop
           playsInline
@@ -38,9 +68,9 @@ export default function HeroSection() {
           onLoadedData={() => setVideoLoaded(true)}
         >
           <source 
-  src={isMobile ? `${basePath}videos/jajakan-hero-mobile.mp4` : `${basePath}videos/jajakan-hero-desktop.mp4`} 
-  type="video/mp4" 
-/>
+            src={isMobile ? `${basePath}videos/jajakan-hero-mobile.mp4` : `${basePath}videos/jajakan-hero-desktop.mp4`} 
+            type="video/mp4" 
+          />
         </video>
       </div>
 
