@@ -67,8 +67,8 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen overflow-hidden" aria-label="ヒーローセクション">
-      {/* 動画背景 */}
-      <div className="absolute inset-0 z-0">
+      {/* 動画背景（内枠に収まるようにパディング追加） */}
+      <div className="absolute inset-[28px] sm:inset-[39px] md:inset-[54px] lg:inset-[68px] z-0">
         <video
           ref={videoRef}
           className="w-full h-full object-cover"
