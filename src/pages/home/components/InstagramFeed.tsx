@@ -63,7 +63,7 @@ export default function InstagramFeed() {
           <div className="max-w-xl mx-auto">
             <blockquote 
               className="instagram-media" 
-              data-instgrm-permalink="https://www.instagram.com/jajakan1030/reels/" 
+              data-instgrm-permalink="https://www.instagram.com/jajakan1030/" 
               data-instgrm-version="14"
               style={{
                 background: '#FFF',
@@ -79,7 +79,7 @@ export default function InstagramFeed() {
             >
               <div style={{ padding: '16px' }}>
                 <a 
-                  href="https://www.instagram.com/jajakan1030/reels/" 
+                  href="https://www.instagram.com/jajakan1030/" 
                   style={{
                     background: '#FFFFFF',
                     lineHeight: 0,
@@ -119,7 +119,7 @@ export default function InstagramFeed() {
               </div>
             </blockquote>
             <p className="text-center text-gray-600 mt-4">
-              ※ 最新のリールは <a href="https://www.instagram.com/jajakan1030/reels/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline font-semibold">@jajakan1030</a> でご確認ください
+              ※ 最新の投稿は <a href="https://www.instagram.com/jajakan1030/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline font-semibold">@jajakan1030</a> でご確認ください
             </p>
           </div>
         </div>
