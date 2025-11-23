@@ -121,7 +121,7 @@ export default function Menu() {
                 {/* 注意事項 */}
                 <div className="mt-4">
                   <div className="space-y-2 text-center text-sm" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                    <p>ちーたんたん用に麺を3-4本と具を少し残しましょう</p>
+                    <p>麺を3-4本と具を少し残す</p>
                     <p>お箸はそのまま載せてスタッフに</p>
                   </div>
                 </div>
