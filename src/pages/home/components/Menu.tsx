@@ -119,12 +119,8 @@ export default function Menu() {
                 </p>
                 
                 {/* 注意事項 */}
-                <div className="mt-4 pt-4 border-t border-gray-300">
+                <div className="mt-4">
                   <div className="space-y-2 text-center text-sm" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                    <p className="font-medium">
-                      <i className="ri-information-line text-amber-600 mr-2"></i>
-                      茹で上がりのグラム数です
-                    </p>
                     <p>ちーたんたん用に麺を3-4本と具を少し残しましょう</p>
                     <p>お箸はそのまま載せてスタッフに</p>
                   </div>
