@@ -114,7 +114,7 @@ export default function Menu() {
                     </p>
                   </div>
                 </div>
-                <p className="text-center font-bold mt-4 text-sm" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
+                <p className="text-center font-bold mt-4 text-sm" style={{ color: '#BD2A2B', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
                   ちーたんまでがじゃじゃ麺です！
                 </p>
               </div>
