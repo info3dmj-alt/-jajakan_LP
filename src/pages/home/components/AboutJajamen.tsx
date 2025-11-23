@@ -30,7 +30,7 @@ export default function AboutJajamen() {
           </div>
 
           {/* 画像 */}
-          <div className="relative h-full min-h-[500px] flex items-start pt-[6.5rem]">
+          <div className="relative h-full min-h-[500px] flex items-start pt-[10rem]">
             <div className="w-full h-[200px]">
               <img
                 src={`${basePath}images/jaja1.webp`}
