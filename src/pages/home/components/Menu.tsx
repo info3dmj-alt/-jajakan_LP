@@ -86,7 +86,7 @@ export default function Menu() {
                   <div className="bg-white rounded-lg p-3 shadow-sm">
                     <div className="w-6 h-6 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-xs mx-auto mb-2">1</div>
                     <p className="text-xs" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                      麺を2-3本と具を少し残す
+                      麺を3-4本と具を少し残す
                     </p>
                   </div>
                   <div className="bg-white rounded-lg p-3 shadow-sm">
