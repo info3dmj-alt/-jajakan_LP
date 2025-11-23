@@ -31,12 +31,12 @@ export default function AboutJajamen() {
 
           {/* 画像 */}
           <div className="relative h-full min-h-[500px] flex items-start pt-[6.5rem]">
-            <div className="w-full" style={{ height: 'calc(100% - 8rem)' }}>
+            <div className="w-full h-[200px]">
               <img
                 src={`${basePath}images/jaja1.webp`}
                 alt="盛岡じゃじゃ麺"
                 className="w-full h-full object-cover rounded-xl"
-                style={{ objectPosition: 'center center' }}
+                style={{ objectPosition: 'center center', maxWidth: '584px' }}
               />
             </div>
           </div>
