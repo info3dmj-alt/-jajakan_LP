@@ -84,7 +84,7 @@ export default function HowToEat() {
             今日のあなたの気分は？カスタマイズ例
           </h3>
           
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
               <div className="text-center">
                 <div className="text-3xl mb-2">🔰</div>
@@ -121,79 +121,6 @@ export default function HowToEat() {
               </div>
             </div>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-8 text-center">
-            <div className="bg-white rounded-lg p-6 shadow-md">
-              <h4 className="font-bold mb-3" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                調味料はどれから？
-              </h4>
-              <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                まずは酢を少量、次にラー油・にんにくを様子見で。
-              </p>
-            </div>
-            <div className="bg-white rounded-lg p-6 shadow-md">
-              <h4 className="font-bold mb-3" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                どれくらい混ぜる？
-              </h4>
-              <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                色が変わるまでしっかり！
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Chitantan Section */}
-        <div className="mt-12 rounded-xl p-8" style={{ backgroundColor: 'rgb(241, 237, 230)' }}>
-          <h3 className="text-2xl font-bold mb-6 text-center" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-            〆は『ちーたんたん』の作り方
-          </h3>
-          
-          <div className="grid md:grid-cols-5 gap-4 text-center mb-6">
-            <div className="bg-white rounded-lg p-4 shadow-md">
-              <div className="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm mx-auto mb-2">
-                1
-              </div>
-              <p className="text-sm" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                麺を2-3本と具を少し残す
-              </p>
-            </div>
-            <div className="bg-white rounded-lg p-4 shadow-md">
-              <div className="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm mx-auto mb-2">
-                2
-              </div>
-              <p className="text-sm" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                丼に生卵を割り入れてよく混ぜる
-              </p>
-            </div>
-            <div className="bg-white rounded-lg p-4 shadow-md">
-              <div className="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm mx-auto mb-2">
-                3
-              </div>
-              <p className="text-sm" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                箸を載せたまま「ちーたんお願いします！」とお声がけ
-              </p>
-            </div>
-            <div className="bg-white rounded-lg p-4 shadow-md">
-              <div className="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm mx-auto mb-2">
-                4
-              </div>
-              <p className="text-sm" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                茹で汁が注がれ、ネギ＆味噌で整う
-              </p>
-            </div>
-            <div className="bg-white rounded-lg p-4 shadow-md">
-              <div className="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-sm mx-auto mb-2">
-                5
-              </div>
-              <p className="text-sm" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                塩・こしょうで仕上げて完成
-              </p>
-            </div>
-          </div>
-          
-          <p className="text-center font-bold" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-            ちーたんまでがじゃじゃ麺です。まずはお試しください！
-          </p>
         </div>
       </div>
     </section>
