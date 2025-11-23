@@ -124,10 +124,6 @@ export default function Menu() {
           {/* 注意事項 */}
           <div className="rounded-lg p-6 text-center" style={{ backgroundColor: 'rgb(241, 237, 230)' }}>
             <div className="space-y-2" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-              <p className="font-medium">
-                <i className="ri-information-line text-amber-600 mr-2"></i>
-                茹で上がりのグラム数です
-              </p>
               <p>ちーたんたん用に麺を3-4本と具を少し残しましょう</p>
               <p>お箸はそのまま載せてスタッフに</p>
             </div>
