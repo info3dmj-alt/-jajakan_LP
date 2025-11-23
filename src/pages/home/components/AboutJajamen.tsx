@@ -30,11 +30,11 @@ export default function AboutJajamen() {
           </div>
 
           {/* 画像 */}
-          <div className="relative h-full min-h-[500px] flex items-center">
+          <div className="relative h-full min-h-[500px] flex items-center py-8">
             <img
               src={`${basePath}images/jaja1.webp`}
               alt="盛岡じゃじゃ麺"
-              className="w-full h-full object-contain rounded-xl"
+              className="w-full h-full object-cover rounded-xl"
               style={{ objectPosition: 'center center' }}
             />
           </div>
