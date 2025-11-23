@@ -12,6 +12,18 @@ export default function AboutJajamen() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch mb-16">
+          {/* 画像 */}
+          <div className="relative h-full min-h-[500px] flex items-start pt-[10rem]">
+            <div className="w-full h-[200px]">
+              <img
+                src={`${basePath}images/jaja1.webp`}
+                alt="盛岡じゃじゃ麺"
+                className="w-full h-full object-cover rounded-xl"
+                style={{ objectPosition: 'center center', maxWidth: '584px' }}
+              />
+            </div>
+          </div>
+
           {/* テキストセクション */}
           <div className="flex">
             <div className="flex flex-col justify-between h-full">
@@ -26,18 +38,6 @@ export default function AboutJajamen() {
               <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif', fontSize: '1rem', lineHeight: '1.8' }}>
                 さらに、食後の楽しみが「ちーたんたん」。器に残ったじゃじゃ味噌に生卵を落とし、茹で汁を加えて溶き卵スープにしていただく。一度で二度美味しい〆の一品。一度食べると、二度三度と通いたくなる、記憶に刻まれるほど個性的な味をぜひ体験してみてください。
               </p>
-            </div>
-          </div>
-
-          {/* 画像 */}
-          <div className="relative h-full min-h-[500px] flex items-start pt-[10rem]">
-            <div className="w-full h-[200px]">
-              <img
-                src={`${basePath}images/jaja1.webp`}
-                alt="盛岡じゃじゃ麺"
-                className="w-full h-full object-cover rounded-xl"
-                style={{ objectPosition: 'center center', maxWidth: '584px' }}
-              />
             </div>
           </div>
         </div>
