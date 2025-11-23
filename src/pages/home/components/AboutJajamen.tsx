@@ -11,10 +11,10 @@ export default function AboutJajamen() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch mb-16">
           {/* テキストセクション */}
-          <div>
-            <div className="space-y-6">
+          <div className="flex">
+            <div className="flex flex-col justify-between h-full">
               <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif', fontSize: '1rem', lineHeight: '1.8' }}>
                 盛岡じゃじゃ麺は、創業約60年、初代・高階貫勝（たかしな かんしょう）が生み出した盛岡を代表する名物です。戦前、旧満州で食べてきた炸醤麺をもとに、盛岡の人々の味覚に合わせてアレンジを重ねたことが始まり。屋台から始り、こだわりぬいて造り続けた結果、独自の進化を遂げ現在では盛岡のソウルフードとして定着。近年テレビや雑誌等でも広く取り上げられ、多くの方に愛されています。
               </p>

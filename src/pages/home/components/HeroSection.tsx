@@ -71,7 +71,7 @@ export default function HeroSection() {
       <div className="absolute inset-[28px] sm:inset-[39px] md:inset-[54px] lg:inset-[68px] z-0">
         <video
           ref={videoRef}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
           preload="auto"
           aria-label="じゃじゃかんのヒーロー動画"
         />
