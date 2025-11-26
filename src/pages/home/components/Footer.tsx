@@ -43,18 +43,6 @@ export default function Footer() {
               >
                 <i className="ri-instagram-line text-xl"></i>
               </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-amber-700 hover:bg-amber-600 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer"
-              >
-                <i className="ri-facebook-fill text-xl"></i>
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-amber-700 hover:bg-amber-600 rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer"
-              >
-                <i className="ri-twitter-x-line text-xl"></i>
-              </a>
             </div>
             <p className="text-amber-200 text-sm">
               最新情報やお得な特典情報をお届けします
