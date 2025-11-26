@@ -22,7 +22,7 @@ export default function AboutJajamen() {
                 src={`${basePath}images/jaja1.webp`}
                 alt="盛岡じゃじゃ麺"
                 className="w-full h-full object-cover rounded-xl"
-                style={{ objectPosition: 'center center' }}
+                style={{ objectPosition: 'center center', filter: 'brightness(1.05) saturate(0.9)' }}
               />
             </div>
             
@@ -38,7 +38,7 @@ export default function AboutJajamen() {
                 src={`${basePath}images/back_noodle_03.png`}
                 alt="盛岡じゃじゃ麺"
                 className="w-full h-full object-cover rounded-xl"
-                style={{ objectPosition: 'center center' }}
+                style={{ objectPosition: 'center center', filter: 'brightness(1.05) saturate(0.9)' }}
               />
             </div>
             
@@ -51,7 +51,7 @@ export default function AboutJajamen() {
                 src={`${basePath}images/chi-tantan.webp`}
                 alt="ちーたんたん"
                 className="w-full h-full object-cover rounded-xl"
-                style={{ objectPosition: 'center center' }}
+                style={{ objectPosition: 'center center', filter: 'brightness(1.05) saturate(0.9)' }}
               />
             </div>
           </div>
