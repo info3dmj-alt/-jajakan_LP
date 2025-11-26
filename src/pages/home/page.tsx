@@ -1,9 +1,9 @@
-
 import { useState, useEffect } from 'react';
 import HeroSection from './components/HeroSection';
 import AboutJajamen from './components/AboutJajamen';
 import HowToEat from './components/HowToEat';
 import Menu from './components/Menu';
+import Instagram from './components/Instagram';
 import InstagramSpecial from './components/InstagramSpecial';
 import StoreInfo from './components/StoreInfo';
 import Footer from './components/Footer';
@@ -21,6 +21,7 @@ export default function Home() {
       <AboutJajamen />
       <HowToEat />
       <Menu />
+      <Instagram />
       <InstagramSpecial />
       <StoreInfo />
       <Footer />

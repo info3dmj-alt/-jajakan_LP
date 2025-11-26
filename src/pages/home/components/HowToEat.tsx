@@ -14,9 +14,9 @@ export default function HowToEat() {
           <div className="text-center group">
             <div className="relative mb-6">
               <img
-                src="https://readdy.ai/api/search-image?query=Jajamen%20noodles%20before%20mixing%2C%20showing%20separate%20miso%20sauce%2C%20flat%20wheat%20noodles%2C%20cucumber%20and%20green%20onions%20in%20traditional%20Japanese%20bowl%2C%20clean%20presentation%2C%20natural%20lighting%2C%20food%20photography%20style&width=400&height=300&seq=step1&orientation=landscape"
+                src="/images/1.webp"
                 alt="まずは素の味を楽しむ"
-                className="w-full h-48 object-cover object-top rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
+                className="w-full h-48 object-cover object-center rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
               />
               <div className="absolute -top-4 -left-4 w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
                 01
@@ -33,21 +33,12 @@ export default function HowToEat() {
           <div className="text-center group">
             <div className="relative mb-6">
               <img
-                src="https://readdy.ai/api/search-image?query=Jajamen%20noodles%20being%20mixed%20with%20chopsticks%2C%20showing%20the%20mixing%20process%20with%20miso%20sauce%20and%20seasonings%2C%20dynamic%20action%20shot%2C%20traditional%20Japanese%20restaurant%20setting&width=400&height=300&seq=step2&orientation=landscape"
+                src="/images/2.webp"
                 alt="調味料でカスタマイズ"
                 className="w-full h-48 object-cover object-top rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
               />
-              <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg overflow-hidden">
-                {/* 背景GIF */}
-                <img 
-                  src={`${import.meta.env.BASE_URL || '/'}images/ohdo.gif`}
-                  alt=""
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                {/* 半透明オーバーレイ */}
-                <div className="absolute inset-0 bg-red-600 opacity-60"></div>
-                {/* ステップ番号 */}
-                <span className="relative z-10 text-white">02</span>
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                02
               </div>
             </div>
             <h3 className="text-xl font-bold mb-3" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
@@ -60,8 +51,8 @@ export default function HowToEat() {
 
           <div className="text-center group">
             <div className="relative mb-6">
-              <img
-                src="https://readdy.ai/api/search-image?query=Chitantan%20soup%20in%20small%20Japanese%20bowl%20with%20egg%20and%20hot%20broth%2C%20steam%20rising%2C%20traditional%20ceramic%20bowl%2C%20warm%20lighting%2C%20comfort%20food%20photography%20style&width=400&height=300&seq=step3&orientation=landscape"
+             <img
+                src="/images/3.webp"
                 alt="〆は『ちーたんたん』"
                 className="w-full h-48 object-cover object-top rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
               />
