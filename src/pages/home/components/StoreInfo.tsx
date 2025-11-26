@@ -50,22 +50,6 @@ export default function StoreInfo() {
                     <p className="text-sm text-red-600 mt-2" style={{ fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>（売り切れ次第終了の場合あり）</p>
                   </div>
                 </div>
-
-                <div className="flex items-start space-x-3">
-                  <i className="ri-calendar-line text-red-600 text-xl mt-1"></i>
-                  <div>
-                    <p className="font-semibold" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>定休日</p>
-                    <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>火曜日・水曜日</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-3">
-                  <i className="ri-car-line text-red-600 text-xl mt-1"></i>
-                  <div>
-                    <p className="font-semibold" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>駐車場</p>
-                    <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>[店舗確認後記載]</p>
-                  </div>
-                </div>
               </div>
             </div>
 
