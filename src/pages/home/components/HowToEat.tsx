@@ -1,5 +1,7 @@
 
 export default function HowToEat() {
+  const baseUrl = import.meta.env.BASE_URL;
+  
   return (
     <section id="how-to-eat" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,7 +16,7 @@ export default function HowToEat() {
           <div className="text-center group">
             <div className="relative mb-6">
               <img
-                src="/images/1.webp"
+                src={`${baseUrl}images/1.webp`}
                 alt="まずは素の味を楽しむ"
                 className="w-full h-48 object-cover object-center rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
               />
@@ -33,7 +35,7 @@ export default function HowToEat() {
           <div className="text-center group">
             <div className="relative mb-6">
               <img
-                src="/images/2.webp"
+                src={`${baseUrl}images/2.webp`}
                 alt="調味料でカスタマイズ"
                 className="w-full h-48 object-cover object-top rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
               />
@@ -52,7 +54,7 @@ export default function HowToEat() {
           <div className="text-center group">
             <div className="relative mb-6">
              <img
-                src="/images/3.webp"
+                src={`${baseUrl}images/3.webp`}
                 alt="〆は『ちーたんたん』"
                 className="w-full h-48 object-cover object-top rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
               />
