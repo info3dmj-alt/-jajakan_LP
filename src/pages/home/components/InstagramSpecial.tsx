@@ -13,7 +13,14 @@ export default function InstagramSpecial() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6" style={{color: '#FFFFFF', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif'}}>
               <p className="text-lg leading-relaxed">
-                Instagramで @jajakan1030 をフォローして、店頭でフォロー画面を見せるだけ！
+                <a 
+                  href="https://www.instagram.com/jajakan1030/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  Instagramで @jajakan1030 をフォローして、店頭でフォロー画面を見せるだけ！
+                </a>
               </p>
               
               <p className="text-xl font-bold bg-white/20 rounded-lg p-4" style={{color: 'rgb(243, 223, 86)', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif'}}>
