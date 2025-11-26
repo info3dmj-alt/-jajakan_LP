@@ -76,7 +76,7 @@ export default function StoreInfo() {
           <div className="space-y-6">
             <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9234567890123!2d140.0234567!3d35.6789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5aSn5LmF5L-d5ZWG5bqX6KGX!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+                src="https://www.google.com/maps?q=275-0011+千葉県習志野市大久保3-15-2&output=embed"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
