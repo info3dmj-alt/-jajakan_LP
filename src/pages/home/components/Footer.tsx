@@ -28,16 +28,6 @@ export default function Footer() {
                   Instagram
                 </a>
               </li>
-              <li>
-                <a href="#" className="text-amber-200 hover:text-white transition-colors duration-300 cursor-pointer">
-                  お問い合わせ
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-amber-200 hover:text-white transition-colors duration-300 cursor-pointer">
-                  プライバシーポリシー
-                </a>
-              </li>
             </ul>
           </div>
 
