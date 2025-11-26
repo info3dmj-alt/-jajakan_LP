@@ -95,24 +95,7 @@ export default function StoreInfo() {
               ></iframe>
             </div>
 
-            {/* Instagram Info */}
-            <div className="text-white rounded-xl p-8 text-center" style={{ backgroundColor: 'rgb(241, 237, 230)' }}>
-              <h4 className="text-xl font-bold mb-4" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                <i className="ri-instagram-line mr-2"></i>最新情報・営業状況
-              </h4>
-              <p className="mb-4" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                Instagram @jajakan1030 でチェック！
-              </p>
-              <a
-                href="https://instagram.com/jajakan1030"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-bold transition-colors duration-300 cursor-pointer whitespace-nowrap"
-                style={{ color: '#FFFFFF', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}
-              >
-                @jajakan1030 をフォロー
-              </a>
-            </div>
+
           </div>
         </div>
       </div>
