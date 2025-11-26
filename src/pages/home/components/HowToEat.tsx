@@ -18,7 +18,7 @@ export default function HowToEat() {
               <img
                 src={`${baseUrl}images/1.webp`}
                 alt="まずは素の味を楽しむ"
-                className="w-full h-48 object-cover object-center rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
+                className="w-full h-48 object-cover object-top rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
               />
               <div className="absolute -top-4 -left-4 w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
                 01
