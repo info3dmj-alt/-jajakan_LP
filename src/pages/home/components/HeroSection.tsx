@@ -21,9 +21,7 @@ export default function HeroSection() {
     if (!video) return;
 
     // 動画ソースを設定
-    const videoSrc = isMobile 
-      ? `${basePath}videos/jajakan-hero-mobile.mp4` 
-      : `${basePath}videos/jajakan-hero-desktop.mp4`;
+    const videoSrc = `${basePath}videos/jajakanHS02.mp4`;
     
     video.src = videoSrc;
     video.muted = true;
