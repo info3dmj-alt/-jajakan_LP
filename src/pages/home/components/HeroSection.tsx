@@ -75,17 +75,12 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* 和風額縁効果（二重枠） - 動画の外側に配置 */}
+      {/* 和風額縁効果 - 動画の外側に配置 */}
       <div className="absolute inset-0 z-10 pointer-events-none">
         {/* 外枠（赤） */}
         <div 
           className="absolute inset-0 border-[20px] sm:border-[28px] md:border-[40px] lg:border-[52px]"
           style={{ borderColor: '#AB0E00' }}
-        />
-        {/* 中間層（クリーム） - 動画の周りに配置 */}
-        <div 
-          className="absolute inset-[22px] sm:inset-[31px] md:inset-[44px] lg:inset-[56px] border-[6px] sm:border-[8px] md:border-[10px] lg:border-[12px]"
-          style={{ borderColor: '#FBF7EF' }}
         />
       </div>
 
