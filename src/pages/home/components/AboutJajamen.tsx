@@ -19,7 +19,7 @@ export default function AboutJajamen() {
             
             <div className="w-full h-[200px]" style={{ maxWidth: '584px' }}>
               <img
-                src={`${basePath}images/jaja1.webp`}
+                src={`${basePath}images/1-1.png`}
                 alt="盛岡じゃじゃ麺"
                 className="w-full h-full object-cover rounded-xl"
                 style={{ objectPosition: 'center center', filter: 'brightness(1.05) saturate(0.9)' }}
