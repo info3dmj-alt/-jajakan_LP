@@ -1,3 +1,4 @@
+import InstagramReelEmbed from './InstagramReelEmbed';
 
 export default function StoreInfo() {
   return (
@@ -72,8 +73,9 @@ export default function StoreInfo() {
             </div>
           </div>
 
-          {/* Google Map and Instagram Info */}
+          {/* Google Map and Instagram Reel */}
           <div className="space-y-6">
+            {/* Google Map */}
             <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
               <iframe
                 src="https://www.google.com/maps?q=275-0011+千葉県習志野市大久保3-15-2&output=embed"
@@ -87,7 +89,8 @@ export default function StoreInfo() {
               ></iframe>
             </div>
 
-
+            {/* Instagram Reel */}
+            <InstagramReelEmbed reelUrl="https://www.instagram.com/reel/DRQ3K7dk_re/?utm_source=ig_web_copy_link" />
           </div>
         </div>
       </div>
