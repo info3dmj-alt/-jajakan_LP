@@ -40,15 +40,10 @@ export default function StoreInfo() {
                   <div className="w-full">
                     <p className="font-semibold mb-2" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>営業時間</p>
                     <div className="space-y-1 text-sm" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>
-                      <p>月曜日: 11:00～14:30, 16:00～19:00</p>
-                      <p className="text-red-600">火曜日: 定休日</p>
-                      <p className="text-red-600">水曜日: 定休日</p>
-                      <p>木曜日: 11:00～14:30, 16:00～19:00</p>
-                      <p>金曜日: 11:00～14:30, 16:00～19:00</p>
-                      <p>土曜日: 11:00～14:30, 16:00～19:00</p>
-                      <p>日曜日: 11:00～14:30, 16:00～19:00</p>
+                      <p>定休日: 不定休</p>
+                      <p>営業時間: 11:00～15:00(L.O 14:30)</p>
+                      <p>金/土/祝前日: 17:00～20:00(L.O 19:30)</p>
                     </div>
-                    <p className="text-sm text-red-600 mt-2" style={{ fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>（売り切れ次第終了の場合あり）</p>
                   </div>
                 </div>
               </div>
