@@ -43,14 +43,6 @@ export default function StoreInfo() {
                 </div>
 
                 <div className="flex items-start space-x-3">
-                  <i className="ri-phone-line text-red-600 text-xl mt-1 flex-shrink-0"></i>
-                  <div>
-                    <p className="font-semibold text-sm lg:text-base" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>電話</p>
-                    <p className="text-sm lg:text-base" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>[店舗確認後記載]</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-3">
                   <i className="ri-time-line text-red-600 text-xl mt-1 flex-shrink-0"></i>
                   <div className="w-full">
                     <p className="font-semibold mb-2 text-sm lg:text-base" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>営業時間</p>
