@@ -64,7 +64,7 @@ export default function HeroSection() {
   }, [isMobile, basePath]);
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#DE1200]" aria-label="ヒーローセクション">
+    <section className="relative min-h-screen overflow-hidden bg-[#950E01]" aria-label="ヒーローセクション">
       {/* 動画背景（内枠の内側に配置） */}
       <div className="absolute inset-[28px] sm:inset-[39px] md:inset-[54px] lg:inset-[68px] z-0">
         <video
@@ -80,7 +80,7 @@ export default function HeroSection() {
         {/* 外枠（赤） */}
         <div 
           className="absolute inset-0 border-[20px] sm:border-[28px] md:border-[40px] lg:border-[52px]"
-          style={{ borderColor: '#DE1200' }}
+          style={{ borderColor: '#950E01' }}
         />
         {/* 中間層（クリーム） */}
         <div 
@@ -90,7 +90,7 @@ export default function HeroSection() {
         {/* 内枠（赤アクセント） - 動画を囲む */}
         <div 
           className="absolute inset-[26px] sm:inset-[36px] md:inset-[50px] lg:inset-[64px] border-[2px] sm:border-[3px] md:border-[4px]"
-          style={{ borderColor: '#DE1200' }}
+          style={{ borderColor: '#950E01' }}
         />
       </div>
 
