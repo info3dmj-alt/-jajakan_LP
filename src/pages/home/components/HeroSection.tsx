@@ -64,7 +64,7 @@ export default function HeroSection() {
   }, [isMobile, basePath]);
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#3C4A6C]" aria-label="ヒーローセクション">
+    <section className="relative min-h-screen overflow-hidden bg-[#DE1200]" aria-label="ヒーローセクション">
       {/* 動画背景（内枠の内側に配置） */}
       <div className="absolute inset-[28px] sm:inset-[39px] md:inset-[54px] lg:inset-[68px] z-0">
         <video
@@ -77,20 +77,20 @@ export default function HeroSection() {
 
       {/* 和風額縁効果（二重枠） - 動画の外側に配置 */}
       <div className="absolute inset-0 z-10 pointer-events-none">
-        {/* 外枠（ネイビー） */}
+        {/* 外枠（赤） */}
         <div 
           className="absolute inset-0 border-[20px] sm:border-[28px] md:border-[40px] lg:border-[52px]"
-          style={{ borderColor: '#3C4A6C' }}
+          style={{ borderColor: '#DE1200' }}
         />
         {/* 中間層（クリーム） */}
         <div 
           className="absolute inset-[20px] sm:inset-[28px] md:inset-[40px] lg:inset-[52px] border-[6px] sm:border-[8px] md:border-[10px] lg:border-[12px]"
           style={{ borderColor: '#FBF7EF' }}
         />
-        {/* 内枠（ネイビーアクセント） - 動画を囲む */}
+        {/* 内枠（赤アクセント） - 動画を囲む */}
         <div 
           className="absolute inset-[26px] sm:inset-[36px] md:inset-[50px] lg:inset-[64px] border-[2px] sm:border-[3px] md:border-[4px]"
-          style={{ borderColor: '#3C4A6C' }}
+          style={{ borderColor: '#DE1200' }}
         />
       </div>
 
