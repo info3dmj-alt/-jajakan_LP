@@ -31,29 +31,11 @@ export default function AboutJajamen() {
             </p>
           </div>
 
-          {/* 右側: back_noodle_03画像 + 2段落目（入れ替え） + chi-tantan画像 */}
+          {/* 右側: 2段落目のみ */}
           <div className="flex flex-col gap-6 items-center">
-            <div className="w-full h-[200px]" style={{ maxWidth: '584px' }}>
-              <img
-                src={`${basePath}images/back_noodle_03.png`}
-                alt="盛岡じゃじゃ麺"
-                className="w-full h-full object-cover rounded-xl"
-                style={{ objectPosition: 'center center', filter: 'brightness(1.05) saturate(0.9)' }}
-              />
-            </div>
-            
             <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif', fontSize: '1rem', lineHeight: '1.8', maxWidth: '584px' }}>
               味噌をベースに、ひき肉、胡麻、椎茸、その他十数種類の材料を混ぜ込んで炒め寝かせた秘伝の「じゃじゃ味噌」。もちもちとした食感の平打ち麺。茹で上がった熱々の専用麺に、きゅうり、ねぎをトッピング、紅生姜を添えるのがスタンダードなスタイル。おろしニンニクやおろししょうが、食酢、辣油などをお好みで加え、豪快に混ぜ合わせていただきます。和風版のミートソースのような、古くて新しい盛岡独特の麺文化です。
             </p>
-            
-            <div className="w-full h-[200px]" style={{ maxWidth: '584px' }}>
-              <img
-                src={`${basePath}images/chi-tantan.webp`}
-                alt="ちーたんたん"
-                className="w-full h-full object-cover rounded-xl"
-                style={{ objectPosition: 'center center', filter: 'brightness(1.05) saturate(0.9)' }}
-              />
-            </div>
           </div>
         </div>
       </div>
