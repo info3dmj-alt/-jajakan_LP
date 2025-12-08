@@ -82,15 +82,10 @@ export default function HeroSection() {
           className="absolute inset-0 border-[20px] sm:border-[28px] md:border-[40px] lg:border-[52px]"
           style={{ borderColor: '#AB0E00' }}
         />
-        {/* 中間層（クリーム） */}
+        {/* 中間層（クリーム） - 動画の周りに配置 */}
         <div 
-          className="absolute inset-[20px] sm:inset-[28px] md:inset-[40px] lg:inset-[52px] border-[6px] sm:border-[8px] md:border-[10px] lg:border-[12px]"
+          className="absolute inset-[22px] sm:inset-[31px] md:inset-[44px] lg:inset-[56px] border-[6px] sm:border-[8px] md:border-[10px] lg:border-[12px]"
           style={{ borderColor: '#FBF7EF' }}
-        />
-        {/* 内枠（赤アクセント） - 動画を囲む */}
-        <div 
-          className="absolute inset-[26px] sm:inset-[36px] md:inset-[50px] lg:inset-[64px] border-[2px] sm:border-[3px] md:border-[4px]"
-          style={{ borderColor: '#AB0E00' }}
         />
       </div>
 
