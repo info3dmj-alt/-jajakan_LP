@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 permissions:
   contents: read
@@ -21,30 +20,28 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          lfs: true
-        
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          
-      - name: Clean install
-        run: |
-          rm -rf node_modules package-lock.json
-          npm install --force
-          
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
       - name: Build
-        run: npm run build
         env:
-          BASE_PATH: /-jajakan_LP
-          VITE_INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
-          VITE_INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          BASE_PATH: /-jajakan_LP/
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: './out'
 
   deploy:
     environment:
