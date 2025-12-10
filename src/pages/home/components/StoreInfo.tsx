@@ -38,7 +38,6 @@ export default function StoreInfo() {
                   <div>
                     <p className="font-semibold text-sm lg:text-base" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>住所</p>
                     <p className="text-sm lg:text-base" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>〒275-0011 千葉県習志野市大久保３丁目１５−２</p>
-                    <p className="text-xs lg:text-sm" style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif' }}>（詳細は店舗確認後記載）</p>
                   </div>
                 </div>
 
