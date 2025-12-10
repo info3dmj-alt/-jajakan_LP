@@ -18,7 +18,7 @@ export default function AboutJajamen() {
                 src={`${basePath}images/1-1.png`}
                 alt="盛岡じゃじゃ麺"
                 className="w-full rounded-xl"
-                style={{ filter: 'brightness(1.05) saturate(0.9)' }}
+                style={{ filter: 'brightness(1.05) saturate(0.9)', pointerEvents: 'none', userSelect: 'none' }}
               />
             </div>
             
@@ -31,7 +31,7 @@ export default function AboutJajamen() {
                 src={`${basePath}images/1-3.png`}
                 alt="ちーたんたん"
                 className="w-full rounded-xl"
-                style={{ filter: 'brightness(1.05) saturate(0.9)' }}
+                style={{ filter: 'brightness(1.05) saturate(0.9)', pointerEvents: 'none', userSelect: 'none' }}
               />
             </div>
           </div>
@@ -47,7 +47,7 @@ export default function AboutJajamen() {
                 src={`${basePath}images/1-2.png`}
                 alt="じゃじゃ麺の特徴"
                 className="w-full rounded-xl"
-                style={{ filter: 'brightness(1.05) saturate(0.9)' }}
+                style={{ filter: 'brightness(1.05) saturate(0.9)', pointerEvents: 'none', userSelect: 'none' }}
               />
             </div>
             
