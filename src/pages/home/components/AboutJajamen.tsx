@@ -22,7 +22,7 @@ export default function AboutJajamen() {
               />
             </div>
             
-            <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif', fontSize: '1rem', lineHeight: '1.8', maxWidth: '584px' }}>
+            <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif', fontSize: '1.26rem', lineHeight: '2.52', maxWidth: '584px' }}>
               味噌をベースに、ひき肉、胡麻、椎茸、その他十数種類の材料を混ぜ込んで炒め寝かせた秘伝の「じゃじゃ味噌」。もちもちとした食感の平打ち麺。茹で上がった熱々の専用麺に、きゅうり、ねぎをトッピング、紅生姜を添えるのがスタンダードなスタイル。おろしニンニクやおろししょうが、食酢、辣油などをお好みで加え、豪快に混ぜ合わせていただきます。和風版のミートソースのような、古くて新しい盛岡独特の麺文化です。
             </p>
           </div>
