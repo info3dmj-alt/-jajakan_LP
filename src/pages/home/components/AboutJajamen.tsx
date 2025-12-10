@@ -51,7 +51,7 @@ export default function AboutJajamen() {
               />
             </div>
             
-            <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif', fontSize: '1rem', lineHeight: '1.8', maxWidth: '584px' }}>
+            <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif', fontSize: '1.26rem', lineHeight: '2.52', maxWidth: '584px' }}>
               さらに、食後の楽しみが「ちーたんたん」。器に残ったじゃじゃ味噌に生卵を落とし、茹で汁を加えて溶き卵スープにしていただく。一度で二度美味しい〆の一品。一度食べると、二度三度と通いたくなる、記憶に刻まれるほど個性的な味をぜひ体験してみてください。
             </p>
           </div>
