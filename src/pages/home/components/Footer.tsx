@@ -55,16 +55,6 @@ export default function Footer() {
           <p className="text-amber-200 text-sm mb-4 md:mb-0">
             © 2025 じゃじゃかん All Rights Reserved.
           </p>
-          <div className="flex items-center space-x-4">
-            <a
-              href="https://readdy.ai/?origin=logo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-amber-200 hover:text-white text-sm transition-colors duration-300 cursor-pointer"
-            >
-              Website Builder
-            </a>
-          </div>
         </div>
       </div>
     </footer>
