@@ -13,12 +13,12 @@ export default function AboutJajamen() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
           {/* 左側: 画像 + 味噌の説明 + 画像 */}
           <div className="flex flex-col gap-6 items-center">
-            <div className="w-full" style={{ maxWidth: '584px' }}>
+            <div className="w-full" style={{ maxWidth: '584px', height: '408px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <img
                 src={`${basePath}images/1-1.png`}
                 alt="盛岡じゃじゃ麺"
-                className="w-full rounded-xl"
-                style={{ filter: 'brightness(1.05) saturate(0.9)', pointerEvents: 'none', userSelect: 'none' }}
+                className="rounded-xl"
+                style={{ filter: 'brightness(1.05) saturate(0.9)', pointerEvents: 'none', userSelect: 'none', maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
               />
             </div>
             
