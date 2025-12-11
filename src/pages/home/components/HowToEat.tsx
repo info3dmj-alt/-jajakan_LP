@@ -36,7 +36,7 @@ export default function HowToEat() {
           <div className="text-center group">
             <div className="relative mb-4 md:mb-6">
               <img
-                src={`${baseUrl}images/1-4.png`}
+                src={`${baseUrl}images/1-5.png`}
                 alt="調味料でカスタマイズ"
                 className="w-full h-40 md:h-48 object-cover object-center rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
                 style={{ filter: 'brightness(1.05) saturate(0.85)' }}
@@ -56,7 +56,7 @@ export default function HowToEat() {
           <div className="text-center group">
             <div className="relative mb-4 md:mb-6">
              <img
-                src={`${baseUrl}images/1-5.png`}
+                src={`${baseUrl}images/1-3.png`}
                 alt="〆は『ちーたんたん』"
                 className="w-full h-40 md:h-48 object-cover object-center rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
                 style={{ filter: 'brightness(1.02) saturate(0.95)' }}
