@@ -36,7 +36,7 @@ export default function HowToEat() {
           <div className="text-center group">
             <div className="relative mb-6">
               <img
-                src={`${baseUrl}images/2.webp`}
+                src={`${baseUrl}images/1-4.png`}
                 alt="調味料でカスタマイズ"
                 className="w-full h-48 object-cover object-top rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
                 style={{ filter: 'brightness(1.05) saturate(0.85)' }}
