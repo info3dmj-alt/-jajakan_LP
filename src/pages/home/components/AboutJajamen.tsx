@@ -14,7 +14,7 @@ export default function AboutJajamen() {
           {/* 左側: 画像 + 味噌の説明 + 画像 */}
           <div className="flex flex-col gap-4 md:gap-6 items-center">
             <div className="w-full max-w-[584px]">
-              <div className="relative w-full" style={{ paddingBottom: '69.86%' }}>
+              <div className="relative w-full" style={{ paddingBottom: '80%' }}>
                 <img
                   src={`${basePath}images/1-1.png`}
                   alt="盛岡じゃじゃ麺"
