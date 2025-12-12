@@ -24,7 +24,7 @@ export default function AboutJajamen() {
               </div>
             </div>
             
-            <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif', maxWidth: '584px', maxHeight: '467px' }} className="text-base md:text-lg lg:text-xl leading-normal md:leading-relaxed lg:leading-loose">
+            <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif', maxWidth: '584px', minHeight: '467px', display: 'flex', alignItems: 'center' }} className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-loose lg:leading-[2.2]">
               味噌ベースに、ひき肉、胡麻、椎茸、その他十数の材料を混ぜ込んで炒め寝かせた、秘伝「じゃじゃ味噌」。もちもちとした食感の茹で上がった熱々の専用麺に、きゅうり、ねぎをトッピング、紅生姜を添えるのがスタンダードなスタイル。おろしニンニクやおろししょうが、食酢、辣油をお好みで加え、豪快に混ぜ合わせていただきます。和風ミートソースのような、盛岡独特の麺文化です。
             </p>
             
@@ -40,7 +40,7 @@ export default function AboutJajamen() {
 
           {/* 右側: 1段落目 + 画像 + 3段落目 */}
           <div className="flex flex-col gap-6 md:gap-8 lg:gap-10 items-center">
-            <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif', maxWidth: '584px', maxHeight: '467px' }} className="text-base md:text-lg lg:text-xl leading-normal md:leading-relaxed lg:leading-loose">
+            <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif', maxWidth: '584px', minHeight: '467px', display: 'flex', alignItems: 'center' }} className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-loose lg:leading-[2.2]">
               盛岡じゃじゃ麺は、創業約60年、初代・高階貫勝（たかしな かんしょう）が戦前、旧満州で食べてきた炸醤麺をもとに、盛岡の人々の味覚に合わせてアレンジを重ねたことが始まり。屋台から始り、こだわりぬいて造り続け独自の進化を遂た。現在では盛岡のソウルフードとして定着し近年テレビやSNS等でも広く取り上げられ、多くの方に愛されています。
             </p>
             
@@ -53,7 +53,7 @@ export default function AboutJajamen() {
               />
             </div>
             
-            <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif', maxWidth: '584px', maxHeight: '467px' }} className="text-base md:text-lg lg:text-xl leading-normal md:leading-relaxed lg:leading-loose">
+            <p style={{ color: '#44413C', fontFamily: '"Yu Mincho Pr6N M", "Yu Mincho", "YuMincho", serif', maxWidth: '584px', minHeight: '467px', display: 'flex', alignItems: 'center' }} className="text-base md:text-lg lg:text-xl leading-relaxed md:leading-loose lg:leading-[2.2]">
               さらに、食後の楽しみが「ちーたんたん」。麺を2-3本と具を少し残し、卓上の生卵を割り入れてよく混ぜ、箸を載せたまま「ちーたんお願いします！」とスタッフをお呼び下さい。茹で汁と肉味噌を加えて溶き卵スープにしていただく。一度で二度美味しい〆の一品。一度食べると、二度三度と通いたくなる、記憶に刻まれるほど個性的な味。ちーたんたんをぜひ体験してみてください。
             </p>
           </div>
