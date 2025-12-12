@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://info3dmj-alt.github.io/-jajakan_LP/</loc>
+    <lastmod>2025-12-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://info3dmj-alt.github.io/-jajakan_LP/images/1-1.png</image:loc>
+      <image:title>じゃじゃかんの盛岡じゃじゃ麺</image:title>
+      <image:caption>千葉県習志野市津田沼・大久保商店街のじゃじゃ麺専門店</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://info3dmj-alt.github.io/-jajakan_LP/images/1-2.png</image:loc>
+      <image:title>じゃじゃ麺の特徴</image:title>
+      <image:caption>自分で完成させる育てる麺</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://info3dmj-alt.github.io/-jajakan_LP/images/1-3.png</image:loc>
+      <image:title>ちーたんたん</image:title>
+      <image:caption>食後の楽しみ、ちーたんたん</image:caption>
+    </image:image>
+  </url>
+</urlset>

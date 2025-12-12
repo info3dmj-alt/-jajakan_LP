@@ -17,7 +17,7 @@ export default function HowToEat() {
             <div className="relative mb-4 md:mb-6">
               <img
                 src={`${baseUrl}images/1-2.png`}
-                alt="まずは素の味を楽しむ"
+                alt="千葉じゃじゃかんのじゃじゃ麺STEP1 - まずは素の味を楽しむ白い麺"
                 className="w-full h-40 md:h-48 object-cover object-center rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
                 style={{ filter: 'brightness(1.02) saturate(0.95)' }}
               />
@@ -37,7 +37,7 @@ export default function HowToEat() {
             <div className="relative mb-4 md:mb-6">
               <img
                 src={`${baseUrl}images/1-5.png`}
-                alt="調味料でカスタマイズ"
+                alt="津田沼じゃじゃかんSTEP2 - 調味料でカスタマイズした混ぜ合わせじゃじゃ麺"
                 className="w-full h-40 md:h-48 object-cover object-center rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
                 style={{ filter: 'brightness(1.05) saturate(0.85)' }}
               />
@@ -57,7 +57,7 @@ export default function HowToEat() {
             <div className="relative mb-4 md:mb-6">
              <img
                 src={`${baseUrl}images/1-3.png`}
-                alt="〆は『ちーたんたん』"
+                alt="大久保商店街じゃじゃかんSTEP3 - 名物ちーたんたん溶き卵スープ"
                 className="w-full h-40 md:h-48 object-cover object-center rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300"
                 style={{ filter: 'brightness(1.02) saturate(0.95)' }}
               />

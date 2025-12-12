@@ -17,7 +17,7 @@ export default function AboutJajamen() {
               <div className="relative w-full" style={{ paddingBottom: '80%' }}>
                 <img
                   src={`${basePath}images/1-1.png`}
-                  alt="盛岡じゃじゃ麺"
+                  alt="千葉県津田沼じゃじゃかんの盛岡じゃじゃ麺 - 白い麺にじゃじゃ味噌ときゅうりをトッピング"
                   className="absolute inset-0 w-full h-full object-contain rounded-xl"
                   style={{ filter: 'brightness(1.05) saturate(0.9)', pointerEvents: 'none', userSelect: 'none' }}
                 />
@@ -31,7 +31,7 @@ export default function AboutJajamen() {
             <div className="w-full max-w-[584px]">
               <img
                 src={`${basePath}images/1-3.png`}
-                alt="ちーたんたん"
+                alt="津田沼じゃじゃかんの名物ちーたんたん - 食後の楽しみ溶き卵スープ"
                 className="w-full rounded-xl"
                 style={{ filter: 'brightness(1.05) saturate(0.9)', pointerEvents: 'none', userSelect: 'none' }}
               />
@@ -47,7 +47,7 @@ export default function AboutJajamen() {
             <div className="w-full max-w-[584px]">
               <img
                 src={`${basePath}images/1-2.png`}
-                alt="じゃじゃ麺の特徴"
+                alt="大久保商店街じゃじゃかんの盛岡じゃじゃ麺 - 混ぜる前の白い麺ともちもち食感"
                 className="w-full rounded-xl"
                 style={{ filter: 'brightness(1.05) saturate(0.9)', pointerEvents: 'none', userSelect: 'none' }}
               />
