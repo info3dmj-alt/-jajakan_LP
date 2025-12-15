@@ -20,8 +20,10 @@ export default function HeroSection() {
     const video = videoRef.current;
     if (!video) return;
 
-    // 動画ソースを設定
-    const videoSrc = `${basePath}videos/jajakanHS02.mp4`;
+    // モバイルとデスクトップで動画ソースを切り替え
+    const videoSrc = isMobile 
+      ? `${basePath}videos/hero-mobile.mp4`
+      : `${basePath}videos/jajakanHS02.mp4`;
     
     video.src = videoSrc;
     video.muted = true;
